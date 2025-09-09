@@ -48,9 +48,9 @@ docker compose ps
 ```
 
 You should see:  
-- **auth-api** в†’ [http://localhost:8080](http://localhost:8080)  
-- **data-api** в†’ [http://localhost:8081](http://localhost:8081)  
-- **postgres** в†’ `localhost:5433`  
+- **auth-api** ’ [http://localhost:8080](http://localhost:8080)  
+- **data-api** ’ [http://localhost:8081](http://localhost:8081)  
+- **postgres** ’ `localhost:5433`  
 
 ## Testing
 

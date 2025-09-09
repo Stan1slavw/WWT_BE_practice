@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://postgres:5432/appdb}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:Stasqwerty123}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.jdbc.time_zone: UTC
+    open-in-view: false
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
+
+app:
+
+  jwt-secret: ${JWT_SECRET:dev_jwt_secret_change_me}
+  jwt-exp-min: ${JWT_EXP_MIN:120}
+  data-api-url: ${DATA_API_URL:http://data-api:8081}
+  internal-token: ${INTERNAL_TOKEN:dev_internal_token}
